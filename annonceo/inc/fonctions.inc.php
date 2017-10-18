@@ -1,5 +1,6 @@
 <?php
-    function debug($tab) {// fonvtion debug = print_r
+// Fonction debug = print_r();
+    function debug($tab) {
     echo '<div style="color: white; padding: 20px; font-weight: bold; background:#' . rand(111111, 999999) .'">';
 
     $trace = debug_backtrace(); // Retourne les infos sur l'emplacement où est exécutée une fonction.
@@ -15,17 +16,24 @@
 }
 
 
-
-// fonction pour voir si un utilisateur est connecté:
-function userConnecte(){
-	if(isset($_SESSION['membre'])){
-		return TRUE;
-	}
-	else{
-		return FALSE;
-	}
+// Fonction pour savoir si un membre est connecté
+function userConnect() {
+    if(isset($_SESSION['membre'])) {
+        return TRUE;
+    }
+    else {
+        return FALSE;
+    }
 }
 
-
+// Fonction pour savoir si un admin est connecté pour accèder au backOffice
+function userAdmin() {
+    if(userConnect() && $_SESSION['membre']['statut'] == 1) {
+        return TRUE;
+    }
+    else {
+        return FALSE;
+    }
+}
 
 ?>

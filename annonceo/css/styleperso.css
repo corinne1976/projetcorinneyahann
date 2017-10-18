@@ -1,2 +1,18 @@
 .erreur{background: indianred; padding: 10px; margin: 5px; border-radius: 10px; text-align: center; width: 68.5%; color: white; float: right; margin-right: 5%;}
 .validation{ background: #669933 ; padding: 5px; margin: 5px; }
+
+.footer {
+padding-top: 60px;
+background: #F8F8F8;
+}
+
+.supr  {
+    width: 30px;
+}
+.modif  {
+    width: 30px;
+}
+/*.droite {
+position: relative;
+bottom: 295px;
+}*/
