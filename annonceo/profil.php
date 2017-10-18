@@ -14,20 +14,9 @@ if(!userConnect()) {
 ?>
 
 
-
-
-
-
-
-
-
   <!-- Contenu HTML -->
 
   <h1>Profil de <?= $pseudo ?></h1>
-
-
-
-
 
 
   <div class="container">
